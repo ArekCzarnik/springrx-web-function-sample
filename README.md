@@ -10,7 +10,6 @@ It consists of the following types:
 | `DummyPersonRepository` | Dummy implementation of `PersonRepository`    |
 | `PersonHandler`         | Web handler that exposes a `PersonRepository` |
 | `Server`                | Contains a `main` method to start the server  |
-| `Client`                | Contains a `main` method to start the client  |
 
 ### Running the Reactor Netty server
  - Build using maven
@@ -36,10 +35,3 @@ curl -v 'http://localhost:8080/person'
 curl -v 'http://localhost:8080/person/1'
 curl -d '{"name":"Jack Doe","age":"16"}' -H 'Content-Type: application/json' -v 'http://localhost:8080/person'
 ```
-
-### License
-This sample released under version 2.0 of the [Apache License][].
-
-[Apache License]: http://www.apache.org/licenses/LICENSE-2.0
-
-
